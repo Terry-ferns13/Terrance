@@ -4,8 +4,8 @@ This project summarizes long resumes by extracting the most important sentences 
 
 ## Features
 - Uses Latent Semantic Analysis (LSA) from the `sumy` library.
-- Provides a 2-sentence summary of a given resume.
+- Provides a 5-sentence summary of a given resume.
 
 ## How to Run
 1. Make sure you have Python installed.
-2. Install the required library:
+2. Install the required library:pytesseract-ocr and sumy
