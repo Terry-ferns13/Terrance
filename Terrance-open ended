@@ -1,16 +1,1 @@
-from sumy.parsers.plaintext import PlaintextParser
-from sumy.nlp.tokenizers import Tokenizer
-from sumy.summarizers.lsa import LsaSummarizer
-resume_text = """
-I am a software developer with over 5 years of experience in AI, machine learning, and data science. 
-I have expertise in Python, deep learning, and SQL databases. 
-I worked on projects involving natural language processing, predictive modeling, and computer vision. 
-Additionally, I have strong problem-solving skills and experience in full-stack development.
-"""
-parser = PlaintextParser.from_string(resume_text, Tokenizer("english"))
 
-summarizer = LsaSummarizer()
-summary_sentences = summarizer(parser.document, 2)
-print("Resume Summary:")
-for sentence in summary_sentences:
-    print(sentence)
